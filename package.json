@@ -8,6 +8,7 @@
     "@antv/x6-plugin-stencil": "^2.1.5",
     "@types/react": "^18.3.7",
     "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-legacy": "^5.4.3",
     "antd": "^5.22.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
