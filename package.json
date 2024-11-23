@@ -6,9 +6,6 @@
     "@ant-design/icons": "^5.5.1",
     "@antv/x6": "^2.18.1",
     "@antv/x6-plugin-stencil": "^2.1.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
     "@types/react": "^18.3.7",
     "@types/react-dom": "^18.3.0",
     "antd": "^5.22.2",
@@ -42,7 +39,6 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
     "@types/node": "^16.18.119",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",

@@ -1,34 +1,16 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
-
+import { defineConfig } from "vite";
+// import { plugins } from "./build";
+import * as path from "path";
 export default defineConfig({
-  plugins: [react()],
-  base: './',
+  base:'./',
+  // plugins,
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-    }
-  },
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    sourcemap: false,
-    rollupOptions: {
-      output: {
-        chunkFileNames: 'assets/js/[name]-[hash].js',
-        entryFileNames: 'assets/js/[name]-[hash].js',
-        assetFileNames: 'assets/[ext]/[name]-[hash].[ext]',
-        // 分包配置
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom'],
-          'antd-vendor': ['antd'],
-          'x6-vendor': ['@antv/x6']
-        }
-      }
+      "@": path.resolve(__dirname, "./src"),
     },
-    target: 'es2015',
-    minify: 'terser',
-    reportCompressedSize: false,
-  }
-}) 
+  },
+  server: {
+    host: "0.0.0.0", //ip地址
+    port: 8086, // 设置服务启动端口号
+  },
+});

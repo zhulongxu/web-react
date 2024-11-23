@@ -8,26 +8,31 @@
 
     /* Bundler mode */
     "moduleResolution": "node",
-    "resolveJsonModule": true,
+    // "allowImportingTsExtensions": true,
+    // "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-
-    /* Path Alias */
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ]
     },
-
-    /* Types */
-    "types": ["@testing-library/jest-dom"]
+    "baseUrl":"./",
+    "types": [
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false
   },
-  "include": ["src"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx",  "./**/*.ts", "mock/**/*.ts"],
+	"exclude": ["/dist/**", "node_modules"],
+
   "references": [{ "path": "./tsconfig.node.json" }]
 }
