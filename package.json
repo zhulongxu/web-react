@@ -2,6 +2,8 @@
   "name": "untitled5",
   "version": "0.1.0",
   "private": true,
+  "homepage":".",
+  "type": "module",
   "dependencies": {
     "@ant-design/icons": "^5.5.1",
     "@antv/x6": "^2.18.1",

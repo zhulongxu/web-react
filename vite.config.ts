@@ -1,7 +1,9 @@
 import { defineConfig } from "vite";
 import * as path from "path";
+import  plugins  from "./plugins/index";
 export default defineConfig({
   base:'./',
+  plugins,
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
